@@ -32,6 +32,11 @@ class NfonService
         $this->systemId = $systemId;
     }
 
+    public function getSystemId(): string
+    {
+        return $this->systemId;
+    }
+
     private function prepare($method, $path, $data)
     {
         $utcDateTime = gmdate('D, d M Y G:i:s e');
